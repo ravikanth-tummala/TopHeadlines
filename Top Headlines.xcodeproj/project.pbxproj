@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		539BEE8C26C137E700CCB23C /* NewlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539BEE8B26C137E700CCB23C /* NewlistView.swift */; };
 		BB2FE54A26A0C9760073AE77 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FE54926A0C9760073AE77 /* ArticleViewModel.swift */; };
 		BB2FE54C26A0D1A90073AE77 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FE54B26A0D1A90073AE77 /* String+Extension.swift */; };
 		BB8B7C6D269F77C200EBCDB6 /* Top_HeadlinesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B7C6C269F77C200EBCDB6 /* Top_HeadlinesApp.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		539BEE8B26C137E700CCB23C /* NewlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlistView.swift; sourceTree = "<group>"; };
 		BB2FE54926A0C9760073AE77 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		BB2FE54B26A0D1A90073AE77 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BB8B7C69269F77C200EBCDB6 /* Top Headlines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Headlines.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 			children = (
 				BB8B7C6C269F77C200EBCDB6 /* Top_HeadlinesApp.swift */,
 				BB8B7C6E269F77C200EBCDB6 /* ContentView.swift */,
+				539BEE8B26C137E700CCB23C /* NewlistView.swift */,
 				BB2FE54B26A0D1A90073AE77 /* String+Extension.swift */,
 				BB2FE54926A0C9760073AE77 /* ArticleViewModel.swift */,
 				BB8B7C7B269F783400EBCDB6 /* Constants.swift */,
@@ -161,6 +164,7 @@
 				BB8B7C82269F7A7000EBCDB6 /* NewsViewModel.swift in Sources */,
 				BB8B7C80269F7A5400EBCDB6 /* APIService.swift in Sources */,
 				BB8B7C6D269F77C200EBCDB6 /* Top_HeadlinesApp.swift in Sources */,
+				539BEE8C26C137E700CCB23C /* NewlistView.swift in Sources */,
 				BB8B7C7E269F792700EBCDB6 /* News.swift in Sources */,
 				BB2FE54A26A0C9760073AE77 /* ArticleViewModel.swift in Sources */,
 				BB8B7C7C269F783400EBCDB6 /* Constants.swift in Sources */,
@@ -293,7 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Top Headlines/Preview Content\"";
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = B92BAJFGJP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Top Headlines/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -301,7 +305,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.createchsol.Top-Headlines";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geospark.headlines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Top Headlines/Preview Content\"";
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = B92BAJFGJP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Top Headlines/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -323,7 +327,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.createchsol.Top-Headlines";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geospark.headlines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

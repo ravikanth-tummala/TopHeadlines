@@ -7,8 +7,7 @@
 
 import Foundation
 
-// https://newsapi.org/v2/top-headlines?country=us&apiKey=xxxxxxxxxxxxxxxxxxxxxx
-//#warning("Make sure you add your key")
+// https://newsapi.org/v2/top-headlines?country=us&apiKey=e6cb5f6a1f1e4017b8289a9bc07c7ec1
 enum Constants {
     static let baseURL = "https://newsapi.org/v2/top-headlines"
     static let country = "ca"
