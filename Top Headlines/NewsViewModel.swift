@@ -12,16 +12,33 @@ class NewsViewModel: ObservableObject {
     @Published var isLoading = false
     func getNews() {
         isLoading = true
-        APIService.shared.getJSON(urlString: Constants.endPoint, dateDecodingStrategy: .iso8601) { (result: Result<News, APIService.APIError>) in
-            switch result {
-            case .success(let news):
-                DispatchQueue.main.async {
-                    self.articles = news.articles.map(ArticleViewModel.init)
-                    self.isLoading = false
+        if #available(iOS 15, *) {
+            Task.init{
+                do {
+                    let news:News = try await APIService.shared.getJSON(urlString: Constants.endPoint, dateDecodingStrategy: .iso8601)
+                    print(Thread.current)
+                    articles = news.articles.map(ArticleViewModel.init)
+                    isLoading = false
+                }catch{
+                    print(error.localizedDescription)
                 }
-            case .failure(let error):
-                print(error.localizedDescription)
+                
             }
+//            let news:News = APIService.shared.
+        }else{
+           
+            APIService.shared.getJSON(urlString: Constants.endPoint, dateDecodingStrategy: .iso8601) { (result: Result<News, APIService.APIError>) in
+                switch result {
+                case .success(let news):
+                    DispatchQueue.main.async {
+                        self.articles = news.articles.map(ArticleViewModel.init)
+                        self.isLoading = false
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+            
         }
     }
 }

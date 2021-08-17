@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		539BEE8C26C137E700CCB23C /* NewlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539BEE8B26C137E700CCB23C /* NewlistView.swift */; };
+		539BEE8E26C13EF300CCB23C /* AsyncImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539BEE8D26C13EF300CCB23C /* AsyncImageList.swift */; };
 		BB2FE54A26A0C9760073AE77 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FE54926A0C9760073AE77 /* ArticleViewModel.swift */; };
 		BB2FE54C26A0D1A90073AE77 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FE54B26A0D1A90073AE77 /* String+Extension.swift */; };
 		BB8B7C6D269F77C200EBCDB6 /* Top_HeadlinesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B7C6C269F77C200EBCDB6 /* Top_HeadlinesApp.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		539BEE8B26C137E700CCB23C /* NewlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlistView.swift; sourceTree = "<group>"; };
+		539BEE8D26C13EF300CCB23C /* AsyncImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageList.swift; sourceTree = "<group>"; };
 		BB2FE54926A0C9760073AE77 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		BB2FE54B26A0D1A90073AE77 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BB8B7C69269F77C200EBCDB6 /* Top Headlines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Headlines.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 				539BEE8B26C137E700CCB23C /* NewlistView.swift */,
 				BB2FE54B26A0D1A90073AE77 /* String+Extension.swift */,
 				BB2FE54926A0C9760073AE77 /* ArticleViewModel.swift */,
+				539BEE8D26C13EF300CCB23C /* AsyncImageList.swift */,
 				BB8B7C7B269F783400EBCDB6 /* Constants.swift */,
 				BB8B7C7D269F792700EBCDB6 /* News.swift */,
 				BB8B7C7F269F7A5400EBCDB6 /* APIService.swift */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539BEE8E26C13EF300CCB23C /* AsyncImageList.swift in Sources */,
 				BB2FE54C26A0D1A90073AE77 /* String+Extension.swift in Sources */,
 				BB8B7C6F269F77C200EBCDB6 /* ContentView.swift in Sources */,
 				BB8B7C82269F7A7000EBCDB6 /* NewsViewModel.swift in Sources */,

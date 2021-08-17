@@ -42,10 +42,22 @@ struct NewlistView: View {
                     })
                     .buttonStyle(PlainButtonStyle())
                 }
-                if let image = article.image {
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                if #available(iOS 15, *){
+                    #warning("This is temperory")
+                    if article.image != nil{
+//                        AsyncImageList(url: article.imageURL, content: { image in
+//
+//                        }, placeholder: {
+//
+//                        }, currentURL: article.imageURL, body: self)
+                    }
+                }else{
+                    if let image = article.image {
+                        Image(uiImage: image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    
                 }
             }
         }
